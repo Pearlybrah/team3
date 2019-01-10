@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "exampledb",
+    "database": "treesdb",
     "host": "localhost",
     "dialect": "mysql"
   },
