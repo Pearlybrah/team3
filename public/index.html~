@@ -2,14 +2,13 @@
 	<html>
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-			<!-- <link type="text/css" rel="stylesheet" href="assets/styles/normalize.css"/> -->
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<!-- <link rel="stylesheet" type="text/css" href="modal.css"> -->
-			<!-- <link type="text/css" rel="stylesheet" href="assets/styles/responsive.css"> -->
-    		<script src="https://code.jquery.com/jquery.js"></script>
-			<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"></script> -->
-			<script src="js/modal.js"></script>
+			<link type="text/css" rel="stylesheet" href="assets/styles/normalize.css"/>
 			<link type="text/css" rel="stylesheet" href="assets/styles/style.css">
+			 <link rel="stylesheet" type="text/css" href="modal.css">
+			<link type="text/css" rel="stylesheet" href="assets/styles/responsive.css">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<script src="https://code.jquery.com/jquery.js"></script>
+    		<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"></script>
     		<meta name="viewport" content="width=device-width, intial-scale=1.0">
 			<meta name="description" content="Gia is the place where you can give away the items you no longer want anymore.">	
     		<title>Gia</title>
@@ -32,36 +31,59 @@
         <!--Upper Half of Site -->
         <section id="uppers">
         		
-				<button class="trigger-custom" data-izimodal-open="#modal-custom">Give it away</button>
-	
-	
-				<div id="modal-custom" data-iziModal-group="grupo1">
-						<button data-iziModal-close class="icon-close">x</button>
-						<header>
-							<a href="" id="location">Location</a>
-							<a href="" class="active">Gift</a>
-						</header>
-						<section class="hide">
-							<input type="text" placeholder="Search">
-							<div id="modalMap"></div>
-							<footer>
-								<button data-iziModal-close>Cancel</button>
-								<button class="submit">Here</button>            
-							</footer>
-						</section>
-						<section>
-							<input type="text" placeholder="Gift Name">
-							<input type="text" placeholder="Description">
-							<input type="text" placeholder="Condition">
-							<input type="text" placeholder="Image URL">
-							<input type="text" placeholder="Your Email">
-							<label for="check"><input type="checkbox" name="checkbox" id="check" value="1"> I agree to the <u>Terms</u>.</label>
-							<footer>
-								<button data-iziModal-close>Cancel</button>
-								<button class="submit">Submit</button>            
-							</footer>
-						</section>
-					</div>
+	        <div id="modal-custom" data-iziModal-group="grupo1">
+
+        <button data-iziModal-close class="icon-close">Post</button>
+
+        <header>
+
+            <a href="" id="location">Location</a>
+
+            <a href="" class="active">Gift</a>
+
+        </header>
+
+        <section class="hide">
+
+            <input type="text" placeholder="Search">
+
+            <div id="modalMap"></div>
+
+            <footer>
+
+                <button data-iziModal-close>Cancel</button>
+
+                <button class="submit">Here</button>            
+
+            </footer>
+
+        </section>
+
+        <section>
+
+            <input type="text" placeholder="Gift Name">
+
+            <input type="text" placeholder="Description">
+
+            <input type="text" placeholder="Condition">
+
+            <input type="text" placeholder="Image URL">
+
+            <input type="text" placeholder="Your Email">
+
+            <label for="check"><input type="checkbox" name="checkbox" id="check" value="1"> I agree to the <u>Terms</u>.</label>
+
+            <footer>
+
+                <button data-iziModal-close>Cancel</button>
+
+                <button class="submit">Submit</button>            
+
+            </footer>
+
+        </section>
+
+    </div>
 	        <br />
 	        <br />
    	     <button id="downward_arrow">Down</button>
@@ -123,5 +145,6 @@
 		  </section>
 <!--JS functionality -->		  
 		  <script src="js/functionality.js" type="text/javascript"></script>
+<script src="modal.js"></script>
 		</body>
 	</html>
