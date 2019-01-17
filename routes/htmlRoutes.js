@@ -6,10 +6,6 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/views/index.html"));
   });
 
-  app.get("/post", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/views/post.html"));
-  });
-
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/views/404.html"));

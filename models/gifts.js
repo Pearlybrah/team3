@@ -1,8 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var Treegifts = sequelize.define("Treegifts", {
-    routeName: {
-      type: DataTypes.String
-    },
+    routeName: DataTypes.STRING,
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -23,10 +21,6 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1, 150]
       }
-    },
-    condition: {
-      type: DataTypes.STRING,
-      allowNull: false
     },
     location: {
       type: DataTypes.STRING,
