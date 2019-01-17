@@ -1,0 +1,116 @@
+body{
+	background:
+	/* top, transparent green blue, faked with gradient */ 
+	linear-gradient(
+	rgb(168,255,120,.6)
+	,rgb(120,255,214,.6)
+	),
+	/* bottom, image */
+	 url("../images/dog.jpg")
+	 no-repeat
+	 fixed;
+	color: black;
+}
+
+@font-face {
+    font-family:"GetShow";
+    src: url("../fonts/getshow.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face{
+	font-family: "Louis-bold";
+	src: url("../fonts/lbold.ttf")
+}
+
+@font-face{
+	font-family: "Louis-light";
+	src: url("../fonts/llight.ttf")
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:#000;
+}
+
+nav{
+	position:fixed;
+	top: 1em;
+}
+
+
+#logo{
+ font-family:"GetShow", sans-serif;
+ font-size: 3em;
+ margin-left: 3.5em;
+}
+
+#menu{
+ font-family:"GetShow", sans-serif;
+ font-size: 3em;
+ margin-left: 29em;
+}
+
+nav ul li {
+	list-style-type:none;
+	display:inline-block;
+	margin: 0 .05em;
+}
+
+#comment{
+	font-family:"Louis-bold", sans-serif;
+	font-size: 3.5em;
+	margin: 1.5em 0 0 5em;
+}
+
+#bar{
+	margin-top: .5em;
+	width: 100px;
+	border-bottom: 4px solid black;
+}
+
+#side-note{
+	font-size: 1.5em;
+	margin: 1em 0 0 11.65em;
+}
+
+#uppers{
+	max-width: 100%;
+	height: 33em;
+	text-align: center;
+}
+
+#post{
+	margin-top: 8em;
+}
+
+#downers{
+	margin:0 9em;
+	height: 25em;
+	padding: 3em;
+	background-color: #f0ead6;
+	text-align: center;
+}
+
+input{
+	width: 45em;
+}
+
+#categories{
+	margin: 2em 0 0 7em;
+}
+#items{
+	margin-top: 2em;
+	text-align: none;
+}
+#items table {
+	border-collapse: separate;
+    border-spacing: 15px;
+   float:left;
+}
+
+#items img{
+	border-radius: 9px;
+}
+#map{
+	float:right;
+}
