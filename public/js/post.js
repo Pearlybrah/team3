@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
   };
 
-  $("#add-btn").on("click", function(event) {
+  $(".submit").on("click", function(event) {
     event.preventDefault();
 
     const validateInput = () => {
@@ -52,9 +52,27 @@ $(document).ready(function() {
           .trim()
       };
 
-      $.post("/api/new", giftData).then(function(data) {
+      $.post("/api/gifts", giftData).then(function(data) {
         console.log(data);
       });
+      $("#gift-name")
+        .val()
+        .trim(),
+        $("#gift-category")
+          .val()
+          .trim(),
+        $("#gift-description")
+          .val()
+          .trim(),
+        $("#gift-condition")
+          .val()
+          .trim(),
+        $("#gift-location")
+          .val()
+          .trim(),
+        $("#gift-image")
+          .val()
+          .trim();
     }
   });
 
