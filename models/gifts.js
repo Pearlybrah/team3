@@ -1,6 +1,8 @@
-
 module.exports = function(sequelize, DataTypes) {
   var Treegifts = sequelize.define("Treegifts", {
+    routeName: {
+      type: DataTypes.String
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -22,6 +24,10 @@ module.exports = function(sequelize, DataTypes) {
         len: [1, 150]
       }
     },
+    condition: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     location: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -31,7 +37,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     image: {
       type: DataTypes.BLOB,
-      allowNull: true,
+      allowNull: true
     }
   });
   return Treegifts;
