@@ -33,11 +33,13 @@ nav{
 	top: 1em;
 }
 
+
 #logo{
  font-family:"GetShow", sans-serif;
  font-size: 3em;
  margin-left: 3.5em;
 }
+
 
 .trigger-custom{
 	margin-top: 12em;

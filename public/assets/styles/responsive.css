@@ -1,0 +1,257 @@
+@media screen and (min-width:420px) {
+
+/**********************
+General 420px
+**********************/
+
+nav{
+ 	width:100%;
+	position:fixed;
+}
+
+nav ul li{
+	margin:1.5em .20em 0 .20em;
+}
+
+nav img{
+	float:left;
+	margin: 0 .25em;
+}
+
+
+/*********************
+Page Index 420px
+*********************/
+
+#teal_box{
+	padding-top:4em;
+	padding-bottom:2.5em;
+}
+
+#charcoal_box img{
+	max-width:85%;
+	margin-left:8%;
+}
+	
+/********************
+Page About 420px
+*********************/
+
+#about_box_one{
+	padding-top:4.75em;
+}
+
+#about_box_one img{
+	max-width:85%;
+}
+
+/*********************
+Page Products 420px
+*********************/
+
+#service_box_one{
+	padding-top:4.75em;
+}
+
+/********************
+Page News 420px
+********************/
+
+#news_box {
+	padding-top:4.75em;
+}
+
+/********************
+Page Support 420px
+********************/
+
+#support_box{
+	padding-top:4.75em;
+}
+
+} 
+
+@media screen and (min-width:660px) {
+
+/**********************
+General 660px
+**********************/
+
+nav ul {
+	margin-left:16em;
+}
+
+nav ul li{
+	margin:1.5em .25em 0 .25em;
+}
+
+nav img{
+	margin: 0 1.25em;
+}
+
+/**********************
+Page Index 660px
+**********************/
+
+#teal_box img{
+	max-width:80%;
+	margin-left:10%;
+}
+
+#charcoal_box img{
+	max-width:60%;
+	margin-left:20%;
+}
+
+/********************
+Page About 660px
+*********************/
+
+#about_box_one img{
+	max-width:70%;
+	
+}
+
+/********************
+Page Support 660px
+********************/
+
+#contact_box{
+	height:auto;
+	padding-bottom:1.45em;
+}
+
+} 
+
+@media screen and (min-width:880px) {
+
+/**********************
+General
+**********************/
+
+nav{
+ 	width:100%;
+	position:fixed;
+}
+
+nav img {
+	margin: 0 3em;
+}
+
+nav ul {
+	margin:.75em 0 0 40em;
+}
+
+/*********************
+Page Index
+*********************/
+
+#teal_box{
+	padding-bottom:0;
+}
+
+
+#welcome_website_txt{
+	height:5em;
+	width: 12em;
+	float:right;
+	font-size:48px;
+	margin:2.5em 0 0 0;
+
+}
+
+#teal_box img{
+	max-width:45%;
+	margin-left:6%;
+	display:inline-block;
+	float:left;
+}
+
+#charcoal_box img{
+	max-width:32.5%;
+	margin-left:34%;
+	margin-bottom:1em;
+}
+
+#black_box a{
+	padding:.5em;
+}
+
+/********************
+Page About
+*********************/
+
+#about_box_one{
+	padding-top:4.75em;
+}
+
+#about_box_one h3 {
+	width:85%;
+	margin:1em auto 0 auto;
+}
+
+#about_box_one img{
+	max-width:45%;
+	
+}
+
+#expectation-list{
+	margin
+	
+}
+
+
+/*********************
+Page Products
+*********************/
+
+#service_box_one{
+	padding-top:4.75em;
+}
+
+#service_box_one h3{
+	width:80%;
+}
+
+#service_list_one {
+	margin-left:15%;
+	width:65%;
+}
+
+#service_list_two{
+	margin-left:15%;
+	width:65%;
+}
+
+/********************
+Page News
+********************/
+
+#news_box {
+	padding-top:4.75em;
+}
+
+
+/********************
+Page Support
+********************/
+
+#support_box{
+	padding-top:4.75em;
+	width:85%;
+}
+
+#contact_box{
+	height:auto;
+	padding-bottom:1.45em;
+}
+
+#contact_box2 h3 {
+	padding-top:1em;
+}
+
+#contact_info {
+	padding-top:.25em;
+}
+
+}

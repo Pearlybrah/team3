@@ -1,150 +1,154 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-			<link type="text/css" rel="stylesheet" href="assets/styles/normalize.css"/>
-			<link type="text/css" rel="stylesheet" href="assets/styles/style.css">
-			 <link rel="stylesheet" type="text/css" href="modal.css">
-			<link type="text/css" rel="stylesheet" href="assets/styles/responsive.css">
-    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    		<script src="https://code.jquery.com/jquery.js"></script>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"></script>
-    		<meta name="viewport" content="width=device-width, intial-scale=1.0">
-			<meta name="description" content="Gia is the place where you can give away the items you no longer want anymore.">	
-    		<title>Gia</title>
-		</head>
-		<body>
-        <nav>
-        		<span id="logo">Gia</span>
-        		<span id="menu">Menu<img src="assets/images/menu.png" alt="menu icon"/></span>
-        </nav>
-        <section id="comment">
-		  		Sharing is the new currency,<br/>
-				Let your passion speak for itself,<br/>
-				Have a look around we don't <strong>bite</strong> <br/>
-		  	<div id="bar"></div>      		      
-        </section>
-        <section id="side-note">
-				Gia helps connect people who want to give<br/>
-				their prized possessions to other like minded people.<br />		
-		  	</section>
-        <!--Upper Half of Site -->
-        <section id="uppers">
-        		
-	        <div id="modal-custom" data-iziModal-group="grupo1">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="assets/styles/normalize.css"/> 
+    <link type="text/css" rel="stylesheet" href="assets/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/styles/responsive.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/dove.ico" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="modal.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"></script> -->
+    <script src="js/modal.js"></script>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <meta name="description" content="Gia is the home of the sharing economy. Let your passion speak through the form of gifts. "/>
+    <title>Gia</title>
+  </head>
+  <body>
+  <!-- Navigation -->
+    <nav>
+      <span id="logo"><a href="index.html">Gia</a></span>
+      <ul id="menu">
+      	<li>Menu</li>
+      	<li><img src="assets/images/menu.png" alt="menu icon"/></li>
+      </ul>
+    </nav>
+   <!-- Main Blurb --> 
+    <section id="comment">
+      Sharing has been the original currency for centuries,<br />
+      Let your passion speak through the form of gifts,<br />
+      Feel free to have a look around we don't <b>bite</b> <br />
+      <div id="bar"></div>
+    </section>
+  <!-- Secondary Blurb -->  
+    <section id="side-note">
+      <b>Gia is the home of the sharing economy</b><br />
+      connecting generosity together one soul at a time<br />
+    </section>
+    <!--Upper Half of Site -->
+    <section id="uppers">
+    	<!-- Share Item Modal Starts-->
+      <button class="trigger-custom" data-izimodal-open="#modal-custom">Share</button>
+      	<div id="modal-custom" data-iziModal-group="grupo1">
+        		<button data-iziModal-close class="icon-close">x</button>
+        			<header>
+          			<a href="" id="location">Location</a>
+          			<a href="" class="active">Gift</a>
+        			</header>
+        		<section class="hide">
+          		<input type="text" placeholder="Search" />
+          		<div id="modalMap"></div>
+          		<footer>
+            		<button data-iziModal-close>Cancel</button>
+            		<button class="submit">Here</button>
+          		</footer>
+        		</section>
+        		<!-- Start of Modal Form -->
+        		<section id="gift-form">
+          		<input id="gift-name" type="text" placeholder="Gift-Name" />
+          		<input id="gift-category" type="text" placeholder="Category" />
+          		<input id="gift-description" type="text" placeholder="Description" />
+					<input id="gift-condition" type="text" placeholder="Condition" />
+          		<input id="gift-location" type="text" placeholder="Email" />
+          		<input id="gift-image" type="text" placeholder="Image-URL" />
+          	<label for="check">
+	         		<input type="checkbox" name="checkbox" id="check" value="1" /> I agree to the <u>Terms</u>.
+          	</label>
+          	<footer>
+            	<button data-iziModal-close>Cancel</button>
+            	<button class="submit">Submit</button>
+          	</footer>
+        		</section>
+      	</div>
+      	<!-- End of Share Item Modal -->
+      <br />
+      <br />
+      <!--Jquery click function with moz animation-->
+      <button id="downward_arrow">Down</button>      
+    </section>
 
-        <button data-iziModal-close class="icon-close">Post</button>
+    <!--Lower half of site -->
+    <section id="downers">
+      <section id="search">
+        <input type="text" placeholder="Search Gia.." />
+      </section>
+      <section id="categories">
+        <table>
+          <tr>
+            <td><img src="assets/images/icons/clothing.png" alt="Stacked Clothing" title="Clothing Category"/></td>
+            <td><img src="assets/images/icons/commission.png" alt="Voluntary Commssions/Services" title="Commission/Services Category" /></td>
+            <td><img src="assets/images/icons/construction.png" alt="Construction Crane" title="Construction Category" /></td>
+            <td><img src="assets/images/icons/education.png" alt="Certificates and Graduation Hat" title="Education Category"/></td>
+            <td><img src="assets/images/icons/electronics.png" alt="Electrical Contraption" title="Electronics Category"/></td>
+            <td><img src="assets/images/icons/food.png" alt="Turkey Dinner" title="Food Category"/></td>
+            <td><img src="assets/images/icons/furniture.png" alt="Dresser" title="Furniture Category"/></td>
+            <td><img src="assets/images/icons/housekeeping.png" alt="Mop and Bucket" title="Housekeeping Category"/></td>
+            <td><img src="assets/images/icons/misc.png" alt="Other Things" title="Misc Category"/></td>
+            <td><img src="assets/images/icons/pet.png" alt="Paw Print" title="Pets Category"/></td>
+            <td><img src="assets/images/icons/recreational.png" alt="Marijuana Leaf" title="Recreational Category"/></td>
+            <td><img src="assets/images/icons/toys.png" alt="Toys in a Wagon" title="Toys Category"/></td>
+          </tr>
+        </table>
+      </section>
+      <section id="items">
+        <table>
+          <tr>
+          <!-- Modal goes here to display Items details -->
+            <td><img src="assets/images/lemons.jpeg" /></td>
+            <!-- Modal structure -->
+            <div id="modal">
+              <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+              <!-- Modal content -->
+            </div>
 
-        <header>
-
-            <a href="" id="location">Location</a>
-
-            <a href="" class="active">Gift</a>
-
-        </header>
-
-        <section class="hide">
-
-            <input type="text" placeholder="Search">
-
-            <div id="modalMap"></div>
-
-            <footer>
-
-                <button data-iziModal-close>Cancel</button>
-
-                <button class="submit">Here</button>            
-
-            </footer>
-
-        </section>
-
-        <section>
-
-            <input type="text" placeholder="Gift Name">
-
-            <input type="text" placeholder="Description">
-
-            <input type="text" placeholder="Condition">
-
-            <input type="text" placeholder="Image URL">
-
-            <input type="text" placeholder="Your Email">
-
-            <label for="check"><input type="checkbox" name="checkbox" id="check" value="1"> I agree to the <u>Terms</u>.</label>
-
-            <footer>
-
-                <button data-iziModal-close>Cancel</button>
-
-                <button class="submit">Submit</button>            
-
-            </footer>
-
-        </section>
-
-    </div>
-	        <br />
-	        <br />
-   	     <button id="downward_arrow">Down</button>
-   	     <!--Jquery click function with moz animation-->
-		  </section>
-		  
-		  <!--Lower half of site --> 
-		  <section id="downers">
-		  		<section id="search">
-					<input type="text" placeholder="Search Gia..">	  		
-		  		</section>
-		  		<section id="categories">
-					<table>
-						<tr>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>
-							<td><img src="assets/images/categories.png"></td>						
-						</tr>					
-					</table>		  		
-		  		</section>
-				<section id="items">
-					<table>
-						<tr>
-							<td><img src="assets/images/lemons.jpeg"></td>
-							<!-- Modal structure -->
-<div id="modal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
-    <!-- Modal content -->
-</div>
- 
-<!-- Trigger to open Modal -->
-<a href="https://github.com/dolce/iziModal" class="trigger">Modal</a>
-							<td><img src="assets/images/lemons.jpeg"></td>
-							<td><img src="assets/images/lemons.jpeg"></td>						
-						</tr>
-						<tr>
-							<td><img src="assets/images/lemons.jpeg"></td>
-							<td><img src="assets/images/lemons.jpeg"></td>
-							<td><img src="assets/images/lemons.jpeg"></td>						
-						</tr>	
-						<tr>
-							<td><img src="assets/images/lemons.jpeg"></td>
-							<td><img src="assets/images/lemons.jpeg"></td>
-							<td><img src="assets/images/lemons.jpeg"></td>						
-						</tr>					
-					</table>	
-				</section>
-				<section id="map">
-					<div style="overflow:hidden;width: 730px;position: relative;"><iframe width="730" height="500" src="https://maps.google.com/maps?width=730&amp;height=500&amp;hl=en&amp;q=London%2C%20United%20Kingdom+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 20px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;"><small style="line-height: 1.8;font-size: 8px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/it/">Embedgooglemaps IT</a> & <a href="https://buyinstagramfollowersreviews.net">Tons of Instagram Followers</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
-				</section>		  		
-		  </section>
-<!--JS functionality -->		  
-		  <script src="js/functionality.js" type="text/javascript"></script>
-<script src="modal.js"></script>
-		</body>
-	</html>
+            <!-- Trigger to open Modal -->
+            <a href="https://github.com/dolce/iziModal" class="trigger">Modal</a>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+            <td><img src="assets/images/lemons.jpeg" /></td>
+          </tr>
+        </table>
+      </section>
+      <section id="map">
+        <div style="overflow:hidden;width: 730px;position: relative;">
+          <iframe
+            width="730"
+            height="500"
+            src="https://maps.google.com/maps?width=730&amp;height=500&amp;hl=en&amp;q=London%2C%20United%20Kingdom+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <style>
+            #gmap_canvas img {
+              max-width: none !important;
+              background: none !important;
+            }
+          </style>
+        </div>
+      </section>
+    </section>
+    <!--JS functionality -->
+    <script src="js/functionality.js" type="text/javascript"></script>
+  </body>
+</html>
