@@ -2,11 +2,12 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all gifts
-  app.get("/api/:gifts?", function(req, res) {
-    if (req.params.gifts) {
+
+  app.get("/api/:category?", function(req, res) {
+    if (req.params.category) {
       db.Treegifts.findOne({
         where: {
-          routeName: req.params.gifts
+          category: req.params.category
         }
       }).then(function(dbgifts) {
         return res.json(dbgifts);
@@ -20,7 +21,8 @@ module.exports = function(app) {
 
   // Create a new gift
   app.post("/api/gifts", function(req, res) {
-    let routeName = db.Treegifts.title.replace(/\s+/g, "").toLowerCase();
+    console.log(req.body);
+    var routeName = req.body.title.replace(/\s+/g, "").toLowerCase();
     db.Treegifts.create({
       routeName: routeName,
       title: req.body.title,
@@ -28,9 +30,8 @@ module.exports = function(app) {
       description: req.body.description,
       location: req.body.location,
       image: req.body.image
-    }).then(function(dbgifts) {
-      res.json(dbgifts);
     });
+    res.status(204).end();
   });
 
   // Delete a gift by id
