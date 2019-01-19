@@ -34,6 +34,12 @@ module.exports = function(app) {
     res.status(204).end();
   });
 
+  app.post("/api/clear", function(req, res) {
+    // Empty out the arrays of data
+    db.length = [];
+    res.json({ ok: true });
+  });
+
   // Delete a gift by id
   app.delete("/api/gifts/:id", function(req, res) {
     db.Treegifts.destroy({ where: { id: req.params.id } }).then(function(

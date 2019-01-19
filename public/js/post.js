@@ -24,7 +24,7 @@ $(document).ready(function() {
           );
           $("#gift-info-" + i)
             .append("<img />")
-            .attr("src=", data[i].image);
+            .attr("src", data[i].image);
 
           console.log(data[i]);
         }
@@ -32,11 +32,14 @@ $(document).ready(function() {
     });
   };
 
-  $("#downward_arrow").on("click", function() {
-    $.post("/api/gifts", function(data) {
-      $("#items").empty(data);
+  const clearTableGifts = () => {
+    $.ajax({ url: "/api/clear", method: "POST" }).then(function() {
+      $("#items").empty();
     });
-  });
+  };
+
+  $("#downward_arrow").on("click", clearTableGifts);
+
   $(".submit").on("click", function(event) {
     event.preventDefault();
 
