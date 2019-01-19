@@ -8,6 +8,7 @@
 //dotenv is what we will use to protect any api keys from being exposed
 require("dotenv").config();
 var express = require("express");
+var bodyParser = require("body-parser");
 
 // Requiring our models for syncing
 var db = require("./models");
@@ -21,6 +22,7 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
 // =============================================================
