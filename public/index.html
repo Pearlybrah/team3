@@ -53,9 +53,24 @@
           		</footer>
         		</section>
         		<!-- Start of Modal Form -->
-        		<section id="gift-form" action='/' method='POST'>
+            <section id="gift-form" action='/' method='POST'>
+              <select id="gift-category" placeholder="Category">
+                <option value="">Please Choose A Category</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Construction">Construction</option>
+                <option value="Education">Education</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Food">Food</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Housekeeping">Housekeeping</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+                <option value="Pets">Pets</option>
+                <option value="Recreational">Recreational</option>
+                <option value="Services">Services</option>
+                <option value="Toys">Toys</option>
+              </select>
+            <br />
           		<input id="gift-name" type="text" placeholder="Item Name" />
-          		<input id="gift-category" type="text" placeholder="Category" />
           		<input id="gift-description" type="text" placeholder="Description" />
               <input id="gift-condition" type="text" placeholder="Condition" />
               <input id="gift-location" type="text" placeholder="Location" />
@@ -65,7 +80,7 @@
           		</label>
 				<footer>
 					<button data-iziModal-close>Cancel</button>
-					<button class="submit">Submit</button>
+					<button id="refresh" class="submit">Submit</button>
 				</footer>
         		</section>
       	</div>
