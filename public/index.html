@@ -1,44 +1,75 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Gia is the place where you can give away the items you no longer want anymore."
-    />
+    <link type="text/css" rel="stylesheet" href="assets/styles/normalize.css"/> 
     <link type="text/css" rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="assets/styles/responsive.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/dove.ico" />
     <script src="https://code.jquery.com/jquery.js"></script>
-    
+    <link rel="stylesheet" href="assets/styles/iziModal.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <meta name="description" content="Gia is the home of the sharing economy. Let your passion speak through the form of gifts. "/>
     <title>Gia</title>
   </head>
   <body>
-    <nav>
-      <span id="logo">Gia</span>
-      <span id="menu"
-        >Menu<img src="assets/images/menu.png" alt="menu icon"
-      /></span>
-    </nav>
-    <section id="comment">
-      Sharing is the new currency,<br />
-      Let your passion speak for itself,<br />
-      Have a look around we don't <strong>bite</strong> <br />
+    <!-- Navigation -->
+    <header id="navigation">
+      <a id="logo" href="index.html">Gia</a>
+      <a id="menu">
+      	Menu
+      	<img src="assets/images/menu.png" alt="menu icon"/>
+      </a>
+    </header>
+   <!-- Main Blurb --> 
+    <section id="blurbs">
+    	<section id="comment">
+      	Sharing has been the original currency for centuries,<br />
+      	Let your passion speak through the form of gifts,<br />
+      	Feel free to have a look around we don't <b>bite</b> <br />
       <div id="bar"></div>
-    </section>
-    <section id="side-note">
-      Gia helps connect people who want to give<br />
-      their prized possessions to other like minded people.<br />
+    	</section>
+    	<section id="side-note">
+      	Gia is the home of the sharing economy<br />
+      	connecting generosity one soul at a time.<br />
+    	</section>
     </section>
     <!--Upper Half of Site -->
     <section id="uppers">
-      <button class="trigger-custom" data-izimodal-open="#modal-custom">
-        Give it away
-      </button>
-    </section>
-
-    <form id="gift-form" action='/' method='POST'></form>>
+		<!-- Share Item Modal Starts-->
+      <button class="trigger-custom" data-izimodal-open="#modal-custom">Share</button>
+      	<div id="modal-custom" data-iziModal-group="grupo1">
+        		<button data-iziModal-close class="icon-close">x</button>
+        			<header>
+          			<a href="" id="location">Location</a>
+          			<a href="" class="active">Gift</a>
+        			</header>
+        		<section class="hide">
+          		<input type="text" placeholder="Search" />
+          		<div id="modalMap"></div>
+          		<footer>
+            		<button data-iziModal-close>Cancel</button>
+            		<button class="submit">Here</button>
+          		</footer>
+        		</section>
+        		<!-- Start of Modal Form -->
+        		<section id="gift-form" action='/' method='POST'>
+          		<input id="gift-name" type="text" placeholder="Item Name" />
+          		<input id="gift-category" type="text" placeholder="Category" />
+          		<input id="gift-description" type="text" placeholder="Description" />
+					<input id="gift-condition" type="text" placeholder="Condition" />
+          		<input id="gift-location" type="text" placeholder="Email" />
+          		<input id="gift-image" type="text" placeholder="Image-URL" />
+          	<label for="check">
+	         		<input type="checkbox" name="checkbox" id="check" value="1" /> I agree to the <u>Terms</u>.
+          	</label>
+          	<footer>
+            	<button data-iziModal-close>Cancel</button>
+            	<button class="submit">Submit</button>
+          	</footer>
+        		</section>
+      	</div>
+    <form id="gift-form" action='/' method='POST'>
       <input id="gift-name" type="text" placeholder="Gift-Name" />
 
       <input id="gift-category" type="text" placeholder="Category" />
@@ -53,10 +84,7 @@
 
       <button class="submit">Submit</button>
     </form>
-
-    <br />
-    <br />
-    <button id="downward_arrow">Down</button>
+    <button class="downward_arrow"></button>
     <!--Jquery click function with moz animation-->
 
     <!--Lower half of site -->
@@ -68,7 +96,6 @@
         <table>
           <tr>
             <td><img src="assets/images/icons/clothing.png" alt="Stacked Clothing" title="Clothing Category"/></td>
-            <td><img src="assets/images/icons/commission.png" alt="Voluntary Commssions/Services" title="Commission/Services Category" /></td>
             <td><img src="assets/images/icons/construction.png" alt="Construction Crane" title="Construction Category" /></td>
             <td><img src="assets/images/icons/education.png" alt="Certificates and Graduation Hat" title="Education Category"/></td>
             <td><img src="assets/images/icons/electronics.png" alt="Electrical Contraption" title="Electronics Category"/></td>
@@ -78,6 +105,7 @@
             <td><img src="assets/images/icons/misc.png" alt="Other Things" title="Misc Category"/></td>
             <td><img src="assets/images/icons/pet.png" alt="Paw Print" title="Pets Category"/></td>
             <td><img src="assets/images/icons/recreational.png" alt="Marijuana Leaf" title="Recreational Category"/></td>
+            <td><img src="assets/images/icons/service.png" alt="Services" title="Services Category" /></td>
             <td><img src="assets/images/icons/toys.png" alt="Toys in a Wagon" title="Toys Category"/></td>
           </tr>
         </table>
@@ -88,39 +116,11 @@
       </div>
 
       <div class="row" id="map">
-        <div style="overflow:hidden;width: 730px;position: relative;">
-          <iframe
-            width="730"
-            height="500"
-            src="https://maps.google.com/maps?width=730&amp;height=500&amp;hl=en&amp;q=London%2C%20United%20Kingdom+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-          <div
-            style="position: absolute;width: 80%;bottom: 20px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;"
-          >
-            <small style="line-height: 1.8;font-size: 8px;background: #fff;"
-              >Powered by
-              <a href="https://embedgooglemaps.com/it/">Embedgooglemaps IT</a> &
-              <a href="https://buyinstagramfollowersreviews.net"
-                >Tons of Instagram Followers</a
-              ></small
-            >
-          </div>
-          <style>
-            #gmap_canvas img {
-              max-width: none !important;
-              background: none !important;
-            }
-          </style>
-        </div>
         <br />
       </div>
     </section>
     <!--JS functionality -->
-     <script src="js/modal.js" type="text/javascript"></script>
     <script src="js/post.js" type="text/javascript"></script>
+    <script src="js/iziModal.js" type="text/javascript"></script>
   </body>
 </html>
