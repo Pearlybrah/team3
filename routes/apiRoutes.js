@@ -27,17 +27,12 @@ module.exports = function(app) {
       routeName: routeName,
       title: req.body.title,
       category: req.body.category,
+      condition: req.body.condition,
       description: req.body.description,
       location: req.body.location,
       image: req.body.image
     });
     res.status(204).end();
-  });
-
-  app.post("/api/clear", function(req, res) {
-    // Empty out the arrays of data
-    db.length = [];
-    res.json({ ok: true });
   });
 
   // Delete a gift by id

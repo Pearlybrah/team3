@@ -1,5 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
   var Treegifts = sequelize.define("Treegifts", {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     routeName: DataTypes.STRING,
     title: {
       type: DataTypes.STRING,
@@ -16,6 +21,13 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      validate: {
+        len: [1, 150]
+      }
+    },
+    condition: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
