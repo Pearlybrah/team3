@@ -22,9 +22,7 @@ $(document).ready(function() {
           $("#gift-info-" + i).append(
             "<p>Location: " + data[i].location + "</p>"
           );
-          $("#gift-info-" + i)
-            .append("<img />")
-            .attr("src", data[i].image);
+          $("#gift-info-" + i).append("<img src=" + data[i].image + " />");
 
           console.log(data[i]);
         }
