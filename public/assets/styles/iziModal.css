@@ -1,4 +1,25 @@
 
+#modalMap {
+	width: 100%;
+	height: 50vh;
+	background-color: black;
+	margin-bottom: 24px;
+}
+
+#map {
+	width: 100%;
+	height: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
 /*
 * iziModal | v1.5.0
 * http://izimodal.marcelodolce.com
