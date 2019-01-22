@@ -32,61 +32,13 @@ $(document).ready(function() {
     });
   };
 
-  const clearTableGifts = () => {
-    $.ajax({ url: "/api/clear", method: "POST" }).then(function() {
-      $("#items").empty();
-    });
+  $("#downers").hide();
+
+  const showAll = () => {
+    $("#downers").show();
   };
 
-  $("#downward_arrow").on("click", clearTableGifts);
-
-  $(".submit").on("click", function(event) {
-    event.preventDefault();
-
-    let giftData = {
-      title: $("#gift-name")
-        .val()
-        .trim(),
-      category: $("#gift-category")
-        .val()
-        .trim(),
-      description: $("#gift-description")
-        .val()
-        .trim(),
-      condition: $("#gift-condition")
-        .val()
-        .trim(),
-      location: $("#gift-location")
-        .val()
-        .trim(),
-      image: $("#gift-image")
-        .val()
-        .trim()
-    };
-    console.log(giftData);
-
-    $.post("/api/gifts", giftData).then(function(data) {
-      console.log(data);
-    });
-    $("#gift-name")
-      .val()
-      .trim(),
-      $("#gift-category")
-        .val()
-        .trim(),
-      $("#gift-description")
-        .val()
-        .trim(),
-      $("#gift-condition")
-        .val()
-        .trim(),
-      $("#gift-location")
-        .val()
-        .trim(),
-      $("#gift-image")
-        .val()
-        .trim();
-  });
+  $("#downward_arrow").on("click", showAll);
 
   getGifts();
 });
