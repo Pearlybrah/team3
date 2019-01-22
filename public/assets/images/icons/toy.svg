@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="icon"
+   viewBox="0 0 860 780"
+   version="1.1"
+   x="0px"
+   y="0px"
+   id="svg8"
+   sodipodi:docname="toy.svg"
+   width="860"
+   height="780"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview10"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.184375"
+     inkscape:cx="430"
+     inkscape:cy="262"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
+  <path
+     d="M 792.752,602.916 C 803.592,588.054 810,569.762 810,550 810,508.232 781.398,473.02 742.752,462.916 753.592,448.054 760,429.762 760,410 760,368.232 731.398,333.02 692.752,322.916 703.592,308.054 710,289.762 710,270 710,220.374 669.626,180 620,180 H 514.861 C 531.14,160.337 540,135.851 540,110 540,80.618 528.558,52.995 507.782,32.218 487.005,11.442 459.382,0 430,0 400.618,0 372.995,11.442 352.218,32.218 331.442,52.995 320,80.618 320,110 c 0,25.851 8.86,50.337 25.139,70 H 240 c -49.626,0 -90,40.374 -90,90 0,19.762 6.408,38.054 17.248,52.916 C 128.602,333.02 100,368.232 100,410 c 0,19.762 6.408,38.054 17.248,52.916 C 78.602,473.02 50,508.232 50,550 c 0,19.762 6.408,38.054 17.248,52.916 C 28.602,613.02 0,648.231 0,690 c 0,49.626 40.374,90 90,90 h 680 c 49.626,0 90,-40.374 90,-90 0,-41.769 -28.602,-76.98 -67.248,-87.084 z M 360,110 c 0,-38.66 31.34,-70 70,-70 38.66,0 70,31.34 70,70 0,38.66 -31.34,70 -70,70 -38.66,0 -70,-31.34 -70,-70 z M 240,220 h 380 c 27.5,0 50,22.5 50,50 0,27.5 -22.5,50 -50,50 H 240 c -27.5,0 -50,-22.5 -50,-50 0,-27.5 22.5,-50 50,-50 z m -50,140 h 480 c 27.5,0 50,22.5 50,50 0,27.5 -22.5,50 -50,50 H 190 c -27.5,0 -50,-22.5 -50,-50 0,-27.5 22.5,-50 50,-50 z m -50,140 h 580 c 27.5,0 50,22.5 50,50 0,27.5 -22.5,50 -50,50 H 140 c -27.5,0 -50,-22.5 -50,-50 0,-27.5 22.5,-50 50,-50 z M 770,740 H 90 c -27.5,0 -50,-22.5 -50,-50 0,-27.5 22.5,-50 50,-50 h 680 c 27.5,0 50,22.5 50,50 0,27.5 -22.5,50 -50,50 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="fill:#000000" />
+  <text
+     x="-82"
+     y="917"
+     font-size="5px"
+     font-weight="bold"
+     id="text4"
+     style="font-weight:bold;font-size:5px;font-family:'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif;fill:#000000">Created by Tienan</text>
+  <text
+     x="-82"
+     y="922"
+     font-size="5px"
+     font-weight="bold"
+     id="text6"
+     style="font-weight:bold;font-size:5px;font-family:'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif;fill:#000000">from the Noun Project</text>
+</svg>

@@ -23,13 +23,13 @@ body{
 	left: .25em;
 }
 #menu{
-	top:.10em;
-	left:65%;
+	top:.05em;
+	left:62.5%;
 }
 
 #comment{
 	font-size: 2em;
-	padding-top:2em;
+	padding-top:1.5em;
 	text-align: center;
 }
 
@@ -53,7 +53,12 @@ body{
 
 #search{
 	margin: 1em 0;
-	padding:2em 0;
+	padding:4em 0 0;
+}
+
+#gia-search{
+	width:75%;
+	border-radius: 2px;
 }
 
 #categories table{
@@ -81,6 +86,10 @@ General 660px
 General
 **********************/
 
+body{
+	margin: 0;
+}
+
 #logo{
 	top:1em;
 }
@@ -88,6 +97,7 @@ General
 #menu{
 	top:1em;
 }
+
 
 #comment{
 	font-size: 3em;

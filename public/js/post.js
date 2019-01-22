@@ -32,13 +32,5 @@ $(document).ready(function() {
     });
   };
 
-  $("#downers").hide();
-
-  const showAll = () => {
-    $("#downers").show();
-  };
-
-  $("#downward_arrow").on("click", showAll);
-
   getGifts();
 });
