@@ -5,11 +5,6 @@ $(function() {
     overlayColor: "rgba(0, 0, 0, 0.6)"
   });
 
-  /*$(document).on('click', '.trigger-custom', function (event) {
-      event.preventDefault();
-      $('#modal-custom').iziModal('open');
-  });*/
-
   /* JS inside the modal */
 
   $("#modal-custom").on("click", "header a", function(event) {

@@ -23,8 +23,8 @@ $(document).ready(function() {
             "<p>Location: " + data[i].location + "</p>"
           );
           $("#gift-info-" + i)
-            .append("<img />")
-            .attr("src", data[i].image);
+            .append("<img src=" + data[i].image + " />")
+            .attr("multipart/form-data");
 
           console.log(data[i]);
         }
@@ -38,7 +38,7 @@ $(document).ready(function() {
     $("#downers").show();
   };
 
-  $("#downward_arrow").on("click", showAll);
+  $(".downward_arrow").on("click", showAll);
 
   getGifts();
 });
