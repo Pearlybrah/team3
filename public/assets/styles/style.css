@@ -1,4 +1,3 @@
-
 /*******************
 Fonts
 *******************/
@@ -24,6 +23,15 @@ a:link, a:visited {
 a:hover {
 	color:#b4b4b4;
 	cursor:pointer;
+}
+
+#menu-icon{
+	width:5%;
+	height:5%;
+}
+
+#menu-icon:hover{
+    background:url('assets/images/menu-grey.svg');
 }
 
 body{
@@ -52,7 +60,7 @@ body{
 
 #menu{
  font-family:"GetShow", sans-serif;
- font-size: 3em;
+ font-size: 2.15em;
  position: relative;
 }
 
@@ -86,6 +94,7 @@ body{
 	background-color:transparent;
 	border-radius: 50%;
 	margin: 1em auto;
+	scroll-behavior: smooth;
 }
 
 .downard_arrow::after{
@@ -107,26 +116,20 @@ body{
 
 #downers{
 	margin:0 auto;
-	height: 55em;
+	height: auto;
 	background-color: #f0ead6;
 	text-align: center;
 }
 
 #categories{
-	overflow-x:auto;
-}
-#items{
-	margin-top: 2em;
-	text-align: none;
-}
-#items table {
-	border-collapse: separate;
-    border-spacing: 15px;
-   float:left;
+	display: flex;
 }
 
-#items img{
-	border-radius: 9px;
+.category-img{
+	height:50px;
+	width:50px;
 }
+
+
 
 

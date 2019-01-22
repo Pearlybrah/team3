@@ -14,13 +14,13 @@
   </head>
   <body>
     <!-- Navigation -->
-    <header id="navigation">
+    <div id="navigation">
       <a id="logo" href="index.html">Gia</a>
       <a id="menu">
       	Menu
-      	<img src="assets/images/menu.png" alt="menu icon"/>
+      	<img id="menu-icon" src="assets/images/menu.svg" alt="menu icon"/>
       </a>
-    </header>
+    </div>
    <!-- Main Blurb --> 
     <section id="blurbs">
     	<section id="comment">
@@ -71,35 +71,38 @@
         		</section>
       	</div>
 
-    <button class="downward_arrow"></button>
+    <a href="#downers"><button class="downward_arrow"></button></a>
     <!--Jquery click function with moz animation-->
 
     <!--Lower half of site -->
     <section id="downers">
       <section id="search">
-        <input type="text" placeholder="Search Gia.." />
+        <input id="gia-search" type="text" placeholder="Search Gia.." />
       </section>
       <section id="categories">
-        <table>
+        <table id="category-cells">
           <tr>
-            <td><img src="assets/images/icons/clothing.png" alt="Stacked Clothing" title="Clothing Category"/></td>
-            <td><img src="assets/images/icons/construction.png" alt="Construction Crane" title="Construction Category" /></td>
-            <td><img src="assets/images/icons/education.png" alt="Certificates and Graduation Hat" title="Education Category"/></td>
-            <td><img src="assets/images/icons/electronics.png" alt="Electrical Contraption" title="Electronics Category"/></td>
-            <td><img src="assets/images/icons/food.png" alt="Turkey Dinner" title="Food Category"/></td>
-            <td><img src="assets/images/icons/furniture.png" alt="Dresser" title="Furniture Category"/></td>
-            <td><img src="assets/images/icons/housekeeping.png" alt="Mop and Bucket" title="Housekeeping Category"/></td>
-            <td><img src="assets/images/icons/misc.png" alt="Other Things" title="Misc Category"/></td>
-            <td><img src="assets/images/icons/pet.png" alt="Paw Print" title="Pets Category"/></td>
-            <td><img src="assets/images/icons/recreational.png" alt="Marijuana Leaf" title="Recreational Category"/></td>
-            <td><img src="assets/images/icons/service.png" alt="Services" title="Services Category" /></td>
-            <td><img src="assets/images/icons/toys.png" alt="Toys in a Wagon" title="Toys Category"/></td>
+            <td><img src="assets/images/icons/clothing.svg" class="category-img" alt="Stacked Clothing" title="Clothing Category"/></td>
+            <td><img src="assets/images/icons/construction.svg" class="category-img" alt="Construction Crane" title="Construction Category" /></td>
+            <td><img src="assets/images/icons/education.svg" class="category-img" alt="Graduation Hat" title="Education Category"/></td>
+            <td><img src="assets/images/icons/electronics.svg" class="category-img" alt="Electrical Circit" title="Electronics Category"/></td>
+            <td><img src="assets/images/icons/food.svg" class="category-img" alt="Turkey Dinner" title="Food Category"/></td>
+            <td><img src="assets/images/icons/furniture.svg" class="category-img" alt="Dresser" title="Furniture Category"/></td>
+            <td><img src="assets/images/icons/housekeeping.svg" class="category-img" alt="Mop Cart" title="Housekeeping Category"/></td>
+            <td><img src="assets/images/icons/misc.svg" class="category-img" alt="Other Things" title="Misc Category"/></td>
+            <td><img src="assets/images/icons/pet.svg" class="category-img" alt="Paw Print" title="Pets Category"/></td>
+            <td><img src="assets/images/icons/recreational.svg" class="category-img" alt="RV" title="Recreational Category"/></td>
+            <td><img src="assets/images/icons/services.svg" class="category-img" alt="Services" title="Services Category" /></td>
+            <td><img src="assets/images/icons/toy.svg" class="category-img" alt="Toy Rings" title="Toys Category"/></td>
           </tr>
         </table>
       </section>
 
       <div class="row">
-        <div id="items"></div>
+        <div id="items">
+
+
+        </div>
       </div>
 
       <div class="row" id="map">
