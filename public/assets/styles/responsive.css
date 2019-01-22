@@ -1,0 +1,121 @@
+@media screen and (min-width:290px) {
+
+/**********************
+General 315px
+**********************/
+
+body{
+	background:
+	/* top, transparent green blue, faked with gradient */ 
+	linear-gradient(
+	rgb(168,255,120,.6)
+	,rgb(120,255,214,.6)
+	),
+	/* bottom, image */
+	 url("../images/dog.jpg")
+	 no-repeat
+	 fixed;
+	color: black;
+}
+
+#logo{
+	top:.10em;
+	left: .25em;
+}
+#menu{
+	top:.10em;
+	left:65%;
+}
+
+#comment{
+	font-size: 2em;
+	padding-top:2em;
+	text-align: center;
+}
+
+#bar{
+	margin: .5em auto;
+}
+
+#side-note{
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#downward_arrow{
+	margin:1em auto;
+}
+
+#uppers{
+	top:1em;
+}
+
+#search{
+	margin: 1em 0;
+	padding:2em 0;
+}
+
+#categories table{
+	margin: 2em auto;
+}
+}
+
+@media screen and (min-width:660px) {
+
+/**********************
+General 660px
+**********************/
+
+#menu{
+	left:85%;
+}
+
+#downers{
+	margin:0 4em;
+}
+
+@media screen and (min-width:880px) {
+
+/**********************
+General
+**********************/
+
+#logo{
+	top:1em;
+}
+
+#menu{
+	top:1em;
+}
+
+#comment{
+	font-size: 3em;
+	margin:5em 5em 0;
+	text-align: left;
+	line-height: 1.75em;
+}
+
+#bar{
+	margin: 0;
+}
+
+#side-note{
+	font-size: 1.5em;
+	margin:1em 10em 0;
+	text-align: left;
+}
+
+#downers{
+	margin:0 9em;
+}
+
+input{
+	width: 45em;
+}
+
+#categories table{
+	margin: 2em auto;
+}
+
+
