@@ -37,7 +37,7 @@ $(function() {
     }
   });
 
-  $("#modal-custom").on("click", ".submit", function(event) {
+  $("#modal-custom").on("click", ".submit", ".menu", function(event) {
     event.preventDefault();
 
     var fx = "wobble", //wobble shake
