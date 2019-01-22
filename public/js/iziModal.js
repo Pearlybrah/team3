@@ -37,7 +37,7 @@ $(function() {
     }
   });
 
-  $("#modal-custom").on("click", ".submit", function(event) {
+  $("#modal-custom").on("click", "#submit", function(event) {
     event.preventDefault();
 
     var fx = "wobble", //wobble shake
@@ -75,31 +75,14 @@ $(function() {
     $.post("/api/gifts", giftData).then(function(data) {
       console.log(data);
     });
-    $("#gift-name")
-      .val()
-      .trim(),
-      $("#gift-category")
-        .val()
-        .trim(),
-      $("#gift-description")
-        .val()
-        .trim(),
-      $("#gift-condition")
-        .val()
-        .trim(),
-      $("#gift-location")
-        .val()
-        .trim(),
-      $("#gift-image")
-        .val()
-        .trim();
+    $("#gift-name").val("");
+    $("#gift-category").val("");
+    $("#gift-description").val("");
+    $("#gift-condition").val("");
+    $("#gift-location").val("");
+    $("#gift-image").val("");
+    window.location.reload(true);
   });
-  $("#gift-name").val("");
-  $("#gift-category").val("");
-  $("#gift-description").val("");
-  $("#gift-condition").val("");
-  $("#gift-location").val("");
-  $("#gift-image").val("");
 });
 
 /*

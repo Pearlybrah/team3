@@ -22,9 +22,7 @@ $(document).ready(function() {
           $("#gift-info-" + i).append(
             "<p>Location: " + data[i].location + "</p>"
           );
-          $("#gift-info-" + i)
-            .append("<img />")
-            .attr("src", data[i].image);
+          $("#gift-info-" + i).append("<img src='" + data[i].image + "'/>");
 
           console.log(data[i]);
         }
@@ -32,13 +30,24 @@ $(document).ready(function() {
     });
   };
 
-  $("#downers").hide();
+  /*
+  function findPos(obj) {
+    var curtop = 0;
+    if (obj.offsetParent) {
+      do {
+        curtop += obj.offsetTop;
+      } while ((obj = obj.offsetParent));
+      return [curtop];
+    }
+  }
 
-  const showAll = () => {
-    $("#downers").show();
+  let items = $("#items");
+
+  const scrollTo = () => {
+    window.scroll(0, findPos(items));
   };
 
-  $("#downward_arrow").on("click", showAll);
-
+  $(".downward_arrow").on("click", scrollTo);
+*/
   getGifts();
 });

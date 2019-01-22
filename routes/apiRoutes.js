@@ -29,8 +29,7 @@ module.exports = function(app) {
       category: req.body.category,
       condition: req.body.condition,
       description: req.body.description,
-      location: req.body.location,
-      image: req.body.image
+      location: req.body.location
     });
     res.status(204).end();
   });
