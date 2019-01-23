@@ -37,7 +37,7 @@ $(function() {
     }
   });
 
-  $("#modal-custom").on("click", ".submit", ".menu", function(event) {
+  $("#modal-custom").on("click", ".submit", function(event) {
     event.preventDefault();
 
     var fx = "wobble", //wobble shake
@@ -93,6 +93,7 @@ $(function() {
       $("#gift-image")
         .val()
         .trim();
+    window.location.reload();
   });
   $("#gift-name").val("");
   $("#gift-category").val("");
