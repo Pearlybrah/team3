@@ -21,7 +21,7 @@ a:link, a:visited {
 }
 
 a:hover {
-	color:#b4b4b4;
+	color:#ffffff;
 	cursor:pointer;
 }
 
@@ -50,6 +50,8 @@ body{
 
 #navigation{
 	position: fixed;
+	width: 100%;
+	background-color: grey;
 }
 
 #logo{
@@ -64,9 +66,14 @@ body{
  position: relative;
 }
 
+#menu-icon{
+	padding-left:5px;
+	width:25px;
+	height:25px;
+}
+
 #comment{
 	font-family:"Louis-bold", sans-serif;
-	position: relative;
 }
 
 #bar{
@@ -75,6 +82,7 @@ body{
 }
 
 .trigger-custom{
+	margin-top:1em;
 	border: 2.5px solid black;
 	border-radius: 9px;
 	background-color:transparent;
@@ -83,7 +91,7 @@ body{
   transition-duration: 0.3s;
 }
 .trigger-custom:hover{
-  background-color: #b4b4b4; 
+  background-color: #ffffff; 
 }
 
 .downward_arrow{
@@ -130,6 +138,31 @@ body{
 	width:50px;
 }
 
+.item-profile{
+	width: 25%;
+	margin: 0 .25em .5em;
+	display: inline-block;
+}
 
+.item-profile img{
+	width:200px;
+	height:200px;
+	border-radius:5px;
+	display: inline-block;
+}
 
+.item-title{
+	display: block;
+	color:black;
+	font-weight: bold;
+	margin:0;
+	padding: 0;
+}
 
+.item-location{
+	display: block;
+	color:grey;
+	font-weight: bold;
+	margin:0;
+	padding: 0;
+}

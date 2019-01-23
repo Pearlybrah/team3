@@ -24,7 +24,7 @@ body{
 }
 #menu{
 	top:.05em;
-	left:62.5%;
+	left:60%;
 }
 
 #comment{
@@ -44,7 +44,7 @@ body{
 }
 
 #downward_arrow{
-	margin:1em auto;
+	margin:1em auto 1em;
 }
 
 #uppers{
@@ -57,7 +57,7 @@ body{
 }
 
 #gia-search{
-	width:75%;
+	width:65%;
 	border-radius: 2px;
 }
 
@@ -73,7 +73,7 @@ General 660px
 **********************/
 
 #menu{
-	left:85%;
+	left:82%;
 }
 
 #downers{
@@ -86,24 +86,24 @@ General 660px
 General
 **********************/
 
-body{
-	margin: 0;
-}
-
 #logo{
-	top:1em;
+	left:3%;
 }
 
 #menu{
-	top:1em;
+	left:84%;
 }
 
+#navigation{
+	width:78.65%;
+	margin:0 9em;
+}
 
 #comment{
-	font-size: 3em;
-	margin:5em 5em 0;
+	font-size: 2.65em;
+	margin:0 5.5em 0;
 	text-align: left;
-	line-height: 1.75em;
+	line-height: 1.5em;
 }
 
 #bar{
@@ -112,7 +112,7 @@ body{
 
 #side-note{
 	font-size: 1.5em;
-	margin:1em 10em 0;
+	margin:1em 9.75em 0;
 	text-align: left;
 }
 
