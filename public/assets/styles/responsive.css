@@ -57,13 +57,31 @@ body{
 }
 
 #gia-search{
-	width:65%;
+	width:55%;
 	border-radius: 2px;
 }
 
 #categories table{
 	margin: 2em auto;
 }
+
+.item-profile{
+	width: 25%;
+	background-color: #ffffff;
+	border:2px solid black;
+	border-radius: 5px;
+	margin: 0 .25em .5em;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.item-profile img{
+	width:75%;
+	height:75%;
+	display: inline-block;
+	border-radius: 5px;
+}
+
 }
 
 @media screen and (min-width:660px) {
@@ -87,16 +105,16 @@ General
 **********************/
 
 #logo{
-	left:3%;
+	left:1%;
 }
 
 #menu{
-	left:84%;
+	left:86.2%;
 }
 
 #navigation{
-	width:78.65%;
-	margin:0 9em;
+	width:81%;
+	margin:0 8em;
 }
 
 #comment{
@@ -118,7 +136,7 @@ General
 }
 
 #downers{
-	margin:0 9em;
+	margin:0 8em;
 }
 
 input{
