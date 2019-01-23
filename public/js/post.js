@@ -12,26 +12,9 @@ var markers = [];
           giftSection.attr("id", "gift-info-" + i);
           giftSection.attr("class", "item-profile");
           $("#items").append(giftSection);
- css-styling-and-item-experiments
           $("#gift-info-" + i).append("<span class='item-title'>" + data[i].title + "</span>");
           $("#gift-info-" + i).append("<span class='item-location'>" + data[i].location + "</span>");
           $("#gift-info-" + i).append("<img src=" + data[i].image + " + />");
-
-
-          $("#gift-info-" + i).append("<p>Name: " + data[i].title + "</p>");
-          $("#gift-info-" + i).append(
-            "<p>Category: " + data[i].category + "</p>"
-          );
-          $("#gift-info-" + i).append(
-            "<p>Description: " + data[i].description + "</p>"
-          );
-          $("#gift-info-" + i).append(
-            "<p>Condition: " + data[i].condition + "</p>"
-          );
-          $("#gift-info-" + i).append(
-            "<p>Location: " + data[i].location + "</p>"
-          );
-		  $("#gift-info-" + i).append("<img src=" + data[i].image + " />");
 		  
 		  if (data[i].location !== "undefined*undefined*undefined") {
 			  var pin = data[i].location.split("*");
