@@ -1,4 +1,7 @@
-$(document).ready(function() {
+//   array for map markers
+var markers = [];
+// document ready stops the markers from loading properly
+// $(document).ready(function() {
   const getGifts = () => {
     $.get("/api", function(data) {
       if (!data || !data.length) {
@@ -22,11 +25,20 @@ $(document).ready(function() {
           $("#gift-info-" + i).append(
             "<p>Location: " + data[i].location + "</p>"
           );
-          $("#gift-info-" + i).append("<img src=" + data[i].image + " />");
+		  $("#gift-info-" + i).append("<img src=" + data[i].image + " />");
+		  
+		  if (data[i].location !== "undefined*undefined*undefined") {
+			  var pin = data[i].location.split("*");
+			  markers.push({
+				  coords: {lat: parseFloat(pin[0]), lng: parseFloat(pin[1])},
+				  // changes
+				  content: `${data[i].title}<br>${data[i].description}<br>${pin[2]}`
+			  });
+		  }
         }
       }
     });
   };
 
   getGifts();
-});
+// });

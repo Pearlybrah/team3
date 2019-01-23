@@ -1,6 +1,7 @@
 // init modalMap
 var giftMarker = null;
 var giftInfo = {};
+var map;
 
 function modalMap() {
 	// map options
@@ -49,7 +50,7 @@ function modalMap() {
 			map: mMap
 		});
 
-	// check for content
+		// check for content
 		if (props.content) {
 			var infoWindow = new google.maps.InfoWindow({
 				content: props.content
@@ -59,6 +60,11 @@ function modalMap() {
 				infoWindow.open(mMap, giftMarker);
 			});
 		}
+		
+		// recenter map to marker
+		var latiLong = giftMarker.getPosition();
+		mMap.setCenter(latiLong);
+		mMap.setZoom(14);
 	}
 
 	// geocode address
@@ -68,6 +74,7 @@ function modalMap() {
 		$.get(urlget, function(response) {
 			giftInfo.lat = response.results[0].geometry.location.lat;
 			giftInfo.lng = response.results[0].geometry.location.lng;
+			giftInfo.address = response.results[0].formatted_address;
 			addMarker({
 					coords: {lat: giftInfo.lat, lng: giftInfo.lng},
 					content: response.results[0].formatted_address
@@ -86,6 +93,7 @@ function modalMap() {
 							coords: {lat: giftInfo.lat, lng: giftInfo.lng},
 							content: results[0].formatted_address
 						});
+						giftInfo.address = results[0].formatted_address;
 					} else {
 					window.alert('No results found');
 					}
@@ -108,33 +116,18 @@ function initMap() {
 	// new map
 	var map = new google.maps.Map(document.getElementById('map'), options);
 
-	// array of markers
-	var markers = [
-		{
-			coords: {lat: 37.793842, lng: -122.200720},
-			content: '<h3>35th and Mac</h3>'
-		},
-		{
-			coords: {lat: 37.871834, lng: -122.271850},
-			content: '<h3>UCBE building</h3>'
-		},
-		{
-			coords: {lat: 37.905569, lng: -122.066938}
-		}
-	];
-
 	// loop through markers
 	for (var i=0; i<markers.length; i++) {
-		addMarker(markers[i]);
+		addMarker2(markers[i]);
 	}
 
-	// add marker function
-	function addMarker(props) {
+	// add marker function for main page
+	function addMarker2(props) {
 		var marker = new google.maps.Marker({
 			position: props.coords,
 			map: map
 		});
-	// check for content
+		// check for content
 		if (props.content) {
 			var infoWindow = new google.maps.InfoWindow({
 				content: props.content
@@ -144,5 +137,5 @@ function initMap() {
 				infoWindow.open(map, marker);
 			});
 		}
-	}
+	};
 }
