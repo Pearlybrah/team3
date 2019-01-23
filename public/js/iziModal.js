@@ -5,11 +5,6 @@ $(function() {
     overlayColor: "rgba(0, 0, 0, 0.6)"
   });
 
-  /*$(document).on('click', '.trigger-custom', function (event) {
-      event.preventDefault();
-      $('#modal-custom').iziModal('open');
-  });*/
-
   /* JS inside the modal */
 
   $("#modal-custom").on("click", "header a", function(event) {
@@ -44,10 +39,10 @@ $(function() {
       $modal = $(this).closest(".iziModal");
 
     if (!$modal.hasClass(fx)) {
-      $modal.addClass(fx);
+    //   $modal.addClass(fx);
       setTimeout(function() {
         $modal.removeClass(fx);
-      }, 1500);
+      }, 350);
     }
 
     let giftData = {
@@ -63,9 +58,7 @@ $(function() {
       condition: $("#gift-condition")
         .val()
         .trim(),
-      location: $("#gift-location")
-        .val()
-        .trim(),
+      location: giftInfo.lat + "*" + giftInfo.lng + "*" + giftInfo.address,
       image: $("#gift-image")
         .val()
         .trim()
