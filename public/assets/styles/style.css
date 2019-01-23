@@ -76,6 +76,14 @@ body{
 	font-family:"Louis-bold", sans-serif;
 }
 
+#side-note{
+	font-style: italic;
+}
+
+#side-note span{
+	font-weight: bold;
+}
+
 #bar{
 	width: 100px;
 	border-bottom: 3px solid black;
@@ -136,6 +144,10 @@ body{
 .category-img{
 	height:50px;
 	width:50px;
+}
+
+#items{
+	margin: 0 0 1em;
 }
 
 .item-profile{
