@@ -51,7 +51,7 @@ body{
 #navigation{
 	position: fixed;
 	width: 100%;
-	background-color: grey;
+	/*background-color: grey;*/
 }
 
 #logo{
@@ -86,7 +86,7 @@ body{
 
 #bar{
 	width: 100px;
-	border-bottom: 3px solid black;
+	border-bottom: 2.5px solid black;
 }
 
 .trigger-custom{
