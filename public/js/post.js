@@ -10,7 +10,13 @@ var markers = [];
         for (let i = 0; i < data.length; i++) {
           var giftSection = $("<div>");
           giftSection.attr("id", "gift-info-" + i);
+          giftSection.attr("class", "item-profile");
           $("#items").append(giftSection);
+ css-styling-and-item-experiments
+          $("#gift-info-" + i).append("<span class='item-title'>" + data[i].title + "</span>");
+          $("#gift-info-" + i).append("<span class='item-location'>" + data[i].location + "</span>");
+          $("#gift-info-" + i).append("<img src=" + data[i].image + " + />");
+
 
           $("#gift-info-" + i).append("<p>Name: " + data[i].title + "</p>");
           $("#gift-info-" + i).append(
@@ -35,6 +41,7 @@ var markers = [];
 				  content: `${data[i].title}<br>${data[i].description}<br>${pin[2]}`
 			  });
 		  }
+
         }
       }
     });

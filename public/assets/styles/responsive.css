@@ -24,7 +24,7 @@ body{
 }
 #menu{
 	top:.05em;
-	left:62.5%;
+	left:60%;
 }
 
 #comment{
@@ -44,7 +44,7 @@ body{
 }
 
 #downward_arrow{
-	margin:1em auto;
+	margin:1em auto 1em;
 }
 
 #uppers{
@@ -57,13 +57,31 @@ body{
 }
 
 #gia-search{
-	width:75%;
+	width:55%;
 	border-radius: 2px;
 }
 
 #categories table{
 	margin: 2em auto;
 }
+
+.item-profile{
+	width: 25%;
+	background-color: #ffffff;
+	border:2px solid black;
+	border-radius: 5px;
+	margin: 0 .25em .5em;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.item-profile img{
+	width:75%;
+	height:75%;
+	display: inline-block;
+	border-radius: 5px;
+}
+
 }
 
 @media screen and (min-width:660px) {
@@ -73,7 +91,7 @@ General 660px
 **********************/
 
 #menu{
-	left:85%;
+	left:82%;
 }
 
 #downers{
@@ -86,38 +104,39 @@ General 660px
 General
 **********************/
 
-body{
-	margin: 0;
-}
-
 #logo{
-	top:1em;
+	left:1%;
 }
 
 #menu{
-	top:1em;
+	left:86.2%;
 }
 
+#navigation{
+	width:81%;
+	margin:0 8em;
+}
 
 #comment{
 	font-size: 3em;
-	margin:5em 5em 0;
+	margin:0 5.5em 0;
 	text-align: left;
-	line-height: 1.75em;
+	line-height: 1.5em;
 }
 
 #bar{
+	padding: .2em 0;
 	margin: 0;
 }
 
 #side-note{
 	font-size: 1.5em;
-	margin:1em 10em 0;
+	margin:1em 11em 0;
 	text-align: left;
 }
 
 #downers{
-	margin:0 9em;
+	margin:0 8em;
 }
 
 input{
