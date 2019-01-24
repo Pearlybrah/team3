@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "8nTP_KmllA5",
+    "password": "",
     "database": "treesdb",
     "host": "localhost",
     "dialect": "mysql"

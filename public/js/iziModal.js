@@ -39,7 +39,7 @@ $(function() {
       $modal = $(this).closest(".iziModal");
 
     if (!$modal.hasClass(fx)) {
-    //   $modal.addClass(fx);
+      //   $modal.addClass(fx);
       setTimeout(function() {
         $modal.removeClass(fx);
       }, 350);
@@ -78,9 +78,6 @@ $(function() {
         .val()
         .trim(),
       $("#gift-condition")
-        .val()
-        .trim(),
-      $("#gift-location")
         .val()
         .trim(),
       $("#gift-image")
